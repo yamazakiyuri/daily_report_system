@@ -53,7 +53,7 @@ public class Employee {
     private Timestamp created_at;
 
     @Column(name = "updated_at", nullable = false)
-    private Integer updated_flag;
+    private Timestamp updated_at;
 
     @Column(name = "delete_flag", nullable = false)
     private Integer delete_flag;
@@ -106,12 +106,12 @@ public class Employee {
         this.created_at = created_at;
     }
 
-    public Integer getUpdated_flag() {
-        return updated_flag;
+    public Timestamp getUpdated_at() {
+        return updated_at;
     }
 
-    public void setUpdated_flag(Integer updated_flag) {
-        this.updated_flag = updated_flag;
+    public void setUpdated_at(Timestamp updated_at) {
+        this.updated_at = updated_at;
     }
 
     public Integer getDelete_flag() {
